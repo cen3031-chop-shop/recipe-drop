@@ -85,3 +85,31 @@
     margin-left: -9px;
 
 }
+.layout {
+  display: flex;
+  min-height: 100vf;
+  gap: 2rem;
+}
+.btn {
+  position: absolute;
+  right: 0;
+  top: 4.7rem;
+  border: none;
+  background-color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid rgb(250, 245, 240);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: translateX(50%);
+  font-size: 1.1rem;
+  transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.btn:hover {
+  background-color: rgb(245, 240, 235);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
