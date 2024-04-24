@@ -21,3 +21,67 @@
       margin: 0;
     }
   }
+  .sidebar__wrapper {
+    position: relative;
+}
+
+.sidebar {
+    width: 17rem;
+    height: 100vh;
+    background-color:rgb(250, 245, 240);
+    padding: 1rem;
+    transition: all 0.3s linear;
+}
+.sidebar__top {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1 rem;
+    border-bottom: 1px solid rgb(243, 239, 231);
+
+}
+.sidebar__logo {
+    width: 3.4rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.sidebar__list {
+    list-style: none;
+}
+.sidebar__link {
+    display: flex;
+    align-items: center; 
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(255, 59, 0); 
+    padding: 0.8rem 1rem;
+    background-color: rgb(243, 239, 231); 
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    transition: background-color 0.2s, color 0.2s; 
+}
+
+.sidebar__link:hover {
+    background-color: rgb(255, 179, 71); /* Lighter orange for hover background */
+    color: white; /* Change text color to white for better contrast on hover */
+}
+.sidebar__icon {
+    font-size: 1.2rem;
+    display: inline-block;
+}
+.sidebar__name {
+    margin-left: 0.5rem;
+    font-weight: 500;
+}
+
+.sidebar__logo-name {
+    font-size: 1.2rem;
+    font-weight: 790;
+    color: rgb(255 59 0);
+    font-style: italic;
+    margin-left: -9px;
+
+}
