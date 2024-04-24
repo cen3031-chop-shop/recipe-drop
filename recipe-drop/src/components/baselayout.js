@@ -1,12 +1,21 @@
-import { ReactNode } from "react";
-import Sidebar from "./Sidebar";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Sidebar from './Sidebar';
 
-interface Props {
-    children: ReactNode | ReactNode[];
+function BaseLayout({ children }) {
+    return (
+        <div className="layout">
+            <Sidebar />
+            {children}
+        </div>
+    );
+}
 
-}
-export default function BaseLayout({children}: Props) {
-    return <div className="layout">
-        <Sidebar>
-            </Sidebar>{children}</div>
-}
+BaseLayout.propTypes = {
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node
+    ])
+};
+
+export default BaseLayout;
