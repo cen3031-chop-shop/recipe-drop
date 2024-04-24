@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { FaPaperclip } from "react-icons/fa6";
 import { MdCreate } from "react-icons/md";
 
+// define sidebar items with names, hrefs and icons
 const sidebarItems = [
   {
     name: "My Recipes",
@@ -23,7 +24,7 @@ const sidebarItems = [
   },
 
     ]
-
+    // sidebar component
     const Sidebar = () => {
       return (
         <div className ="sidebar__wrapper">
