@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="flex flex-col h-screen bg-white">
       <div className="flex-1 flex flex-col justify-between">
-        {/* Top logo section */}
+ 
         <div className="p-4">
   
         </div>
