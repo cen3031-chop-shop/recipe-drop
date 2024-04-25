@@ -4,9 +4,10 @@ import getAuthAsync from "@/utils/session";
 import SignInRedirectButton from '@/components/sign-in-redirect';
 import "@/app/globals.css";
 
+// path to food image
 const foodImage = 'food.png'; 
 
-
+// define home component
 const Home = () => {
   return (
     <div className="flex flex-col h-screen bg-white">
